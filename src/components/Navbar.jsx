@@ -20,16 +20,16 @@ const Navbar = () => {
       {/* Right Side */}
       <div className="hidden sm:flex">
         <ul className="flex gap-8">
-          <li className="text-primary hover:text-secondary font-medium">
+          <li className="text-primary hover:text-tertiary font-medium">
             <Link to="/">Home</Link>
           </li>
-          <li className="text-primary hover:text-secondary font-medium">
+          <li className="text-primary hover:text-tertiary font-medium">
             Browse By
           </li>
-          <li className="text-primary hover:text-secondary font-medium">
+          <li className="text-primary hover:text-tertiary font-medium">
             Stories
           </li>
-          <li className="text-primary hover:text-secondary font-medium">
+          <li className="text-primary hover:text-tertiary font-medium">
             Agents
           </li>
         </ul>

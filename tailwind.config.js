@@ -8,7 +8,8 @@ export default {
       },
       colors: {
         primary: "#152C5B",
-        secondary: "#3252DF"
+        secondary: "#3252DF",
+        tertiary: "#02BEE3"
       },
       boxShadow: {
         'blue': '0 4px 6px rgba(0, 0, 255, 0.3)', 

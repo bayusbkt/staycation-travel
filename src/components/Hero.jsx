@@ -36,7 +36,7 @@ const Hero = () => {
             We provide what you need to enjoy your holiday with family. Time to
             make another memorable moments.
           </p>
-          <button className="bg-secondary text-white py-2 px-5 md:px-10 rounded-sm font-poppins shadow-blue hover:bg-[#02BEE3] duration-300">
+          <button className="bg-secondary text-white py-2 px-5 md:px-10 rounded-sm font-poppins shadow-blue hover:bg-tertiary duration-300">
             Show Me How
           </button>
           <div className="flex gap-10 md:gap-20 pt-10 lg:pt-14">
