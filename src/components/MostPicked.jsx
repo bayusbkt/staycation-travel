@@ -1,43 +1,12 @@
-const mostPickedData = [
-    {
-      name: "Blue Origin Fams",
-      location: "Jakarta, Indonesia",
-      price: "$50 per night",
-      imgSrc: "../../public/most_picked_1.png",
-    },
-    {
-      name: "Ocean Land",
-      location: "Bandung, Indonesia",
-      price: "$22 per night",
-      imgSrc: "../../public/most_picked_2.png",
-    },
-    {
-      name: "Stark House",
-      location: "Malang, Indonesia",
-      price: "$856 per night",
-      imgSrc: "../../public/most_picked_4.png",
-    },
-    {
-      name: "Vinna Vill",
-      location: "Malang, Indonesia",
-      price: "$62 per night",
-      imgSrc: "../../public/most_picked_3.png",
-    },
-    {
-      name: "Bobox",
-      location: "Medan, Indonesia",
-      price: "$72 per night",
-      imgSrc: "../../public/most_picked_5.png",
-    },
-  ];
+import { mostPickedData } from "../libs/MostPickedData.js";
   
   const MostPicked = () => {
     return (
-      <div className="max-w-[1640px] mx-auto pt-10 md:pt-20 px-6 md:px-16 lg:px-20">
+      <div className="max-w-[1640px] mx-auto h-full pt-10 md:pt-20 px-6 md:px-16 lg:px-20">
         <h1 className="text-primary font-semibold text-2xl mb-6">Most Picked</h1>
-        <section className="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-4 max-h-[450px]">
+        <section className="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-4">
           {mostPickedData.map((item, index) => (
-            <div key={index} className={`relative ${index === 0 ? "row-span-2" : ""} rounded-lg hover:scale-105 duration-300 cursor-pointer`}>
+            <div key={index} className={`relative ${index === 0 ? "row-span-2" : ""} rounded-lg duration-300 cursor-pointer transition ease-in-out delay-150`}>
               <div className="absolute w-full h-full bg-black/10 rounded-lg hover:bg-black/40 hover:font-semibold duration-500">
                 <div className="absolute bottom-4 left-4">
                   <p className="text-white text-xl font-poppins">{item.name}</p>

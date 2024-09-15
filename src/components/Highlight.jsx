@@ -2,13 +2,13 @@ import { highlightData1, highlightData2, highlightData3 } from "../libs/Highligh
 
 const HighlightSection = (data, highlightIndex) => {
   return (
-    <section className="grid grid-cols-4 grid-rows-2 max-h-[250px] gap-5">
+    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
       {data.map((item, index) => (
-        <div className="flex flex-col" key={index}>
-          <div className="relative rounded-lg">
+        <div className="flex flex-col font-poppins" key={index}>
+          <div className="relative rounded-2xl hover:shadow-black duration-300 transition ease-in-out cursor-pointer">
             {index === highlightIndex && (
-              <div className="absolute right-0 bg-[#FF498B] rounded-tr-lg rounded-bl-lg py-1 px-5">
-                <p className="text-white">
+              <div className="absolute right-0 bg-[#FF498B] rounded-tr-lg rounded-bl-lg py-1 px-5 animate-pulse">
+                <p className="text-white sm:text-sm md:text-md">
                   <span className="font-semibold">Popular</span> Choice
                 </p>
               </div>
@@ -20,7 +20,7 @@ const HighlightSection = (data, highlightIndex) => {
             />
           </div>
           <div className="pt-2 pl-2">
-            <p className="text-primary font-medium">{item.title}</p>
+            <p className="text-primary">{item.title}</p>
             <p className="text-[#B0B0B0] text-sm">{item.location}</p>
           </div>
         </div>
