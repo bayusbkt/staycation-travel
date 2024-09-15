@@ -37,13 +37,13 @@ const mostPickedData = [
         <h1 className="text-primary font-semibold text-2xl mb-6">Most Picked</h1>
         <section className="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-4 max-h-[450px]">
           {mostPickedData.map((item, index) => (
-            <div key={index} className={`relative ${index === 0 ? "row-span-2" : ""} rounded-lg`}>
-              <div className="absolute w-full h-full bg-black/10 rounded-lg">
+            <div key={index} className={`relative ${index === 0 ? "row-span-2" : ""} rounded-lg hover:scale-105 duration-300 cursor-pointer`}>
+              <div className="absolute w-full h-full bg-black/10 rounded-lg hover:bg-black/40 hover:font-semibold duration-500">
                 <div className="absolute bottom-4 left-4">
                   <p className="text-white text-xl font-poppins">{item.name}</p>
                   <p className="text-white text-xs font-poppins">{item.location}</p>
                 </div>
-                <div className="absolute right-0 py-2 px-6 rounded-tr-lg rounded-bl-lg bg-[#FF498B]">
+                <div className="absolute right-0 py-1 px-5 rounded-tr-lg rounded-bl-lg bg-[#FF498B]">
                   <p className="text-white text-regular font-poppins">{item.price}</p>
                 </div>
               </div>

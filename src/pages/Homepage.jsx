@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import Highlight from "../components/Highlight";
 import MostPicked from "../components/MostPicked";
 import Navbar from "../components/Navbar";
 import Head from "../elements/Head";
@@ -11,6 +12,7 @@ const Homepage = () => {
         <Navbar />
         <Hero />
         <MostPicked />
+        <Highlight />
       </div>
     </>
   );
